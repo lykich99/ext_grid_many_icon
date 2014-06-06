@@ -1,0 +1,83 @@
+Ext.define('CM.view.V_Lborder' ,{
+    //extend: 'Ext.grid.Panel',
+    extend: 'Ext.panel.Panel',
+    alias: 'widget.vlborder',
+  
+       layout: {
+                    type: 'border',
+                    padding: 5
+                },
+  
+  
+  initComponent: function(){  
+    
+     this.items =  [
+                    {
+							xtype:'panel',
+							region: 'west',
+							title: 'Menu',
+							width: 200,
+							split: true,
+							collapsible: true,
+							floatable: false,
+							layout: 'fit',
+							items: [{
+								       xtype:'treePanel'
+								       
+								   }] 
+  
+							
+                    }, 
+                    {
+							region: 'center',
+							xtype: 'panel',
+							id:'cen',
+							layout: 'fit',
+							//hidden :'true'
+							items: [
+							              {
+								         
+								           //title: 'Bogus Tab',
+								           //html: 'Hello world 1',
+								          //id:'AboutPanel',
+								          //hidden :'true'
+								           //layout: 'fit',
+								           //height:'400',
+								           xtype:'vpanel'
+								       },
+								       { 		       
+                                                                                xtype:'vgrid'
+                                                                         
+
+								       },
+                                                                       {
+                                                                           title: 'Bogus Tab',
+								           html: 'Hello world 1',
+								          id:'TPanel',
+								           hidden :'true'
+								           layout: 'fit',
+								           height:'400',
+                                                                       }
+
+
+
+								   ]   
+					}
+                 
+               
+               
+               
+               ]
+                
+     
+                 
+    
+        this.callParent(arguments);
+    },
+    
+ 
+
+
+    
+    
+});

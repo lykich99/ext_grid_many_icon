@@ -1,0 +1,20 @@
+Ext.define('CM.store.S_Grid', {
+    extend: 'Ext.data.Store',
+    //fields: ['name', 'email'],
+    model: 'CM.model.M_Grid',
+    data: [
+       /* {name: 'Ed',    email: 'ed@sencha.com'},
+        {name: 'Tommy', email: 'tommy@sencha.com'}*/
+          {id: '1',    Name: 'Vas', JobTitle: 'Prog', Phone: '8989898',IsEmployee:'Employee'}
+
+/*
+            {header: 'id',  dataIndex: 'id',  flex: 1},
+            {header: 'Name',  dataIndex: 'Full Name',  flex: 1},
+            {header: 'JobTitle', dataIndex: 'Job title', flex: 1},
+            {header: 'Phone',  dataIndex: 'Phone',  flex: 1},
+            {header: 'IsEmployee',  dataIndex: 'Employee',  flex: 1}*/
+
+
+
+    ]
+});

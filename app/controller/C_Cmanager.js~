@@ -1,0 +1,67 @@
+Ext.define('CM.controller.C_Cmanager', {
+    extend: 'Ext.app.Controller',
+    views: [  'V_Lborder','V_Tree','V_Grid','V_Panel' ],
+    stores: [ 'S_TreeStore','S_Grid' ],
+    models: [ 'M_TreeModel','M_Grid' ],
+ 
+
+    init: function() {
+
+       
+        this.control({
+       
+            'vlborder > panel > treePanel': {
+                           //render: function(){console.log('Panel');}
+                              'cellclick': function(th, td, cellIndex, record, tr, rowIndex, e, eOpts)
+				                     {
+							              /*console.log(th,'th');
+							              console.log(td,'td');
+							              console.log(cellIndex,'cellIndex');
+							              console.log(record.data.id,'record');*/
+							            var p = Ext.getCmp('AboutPanel');
+							            var g = Ext.getCmp('Vgrid')
+							            if(record.data.id == 'aboutPanel')
+							                {
+											  p.doClose();
+											  g.show();
+											  
+											}
+										else
+										    {
+												g.doClose();
+												p.show();
+											   	
+											}			
+							   
+							         }
+                              
+                              
+
+                       },
+             'treePanel' : {
+				 /*
+				 'cellclick': function(th, td, cellIndex, record, tr, rowIndex, e, eOpts)
+				           {
+							   console.log('clikkkk');
+							   
+							   }*/
+			 },
+             'vgrid':{
+                       'render': function(th)
+                                 {
+                                     console.log('this',this);
+
+                                 }                       
+
+                     }                                  
+                       
+       
+        });
+
+    },
+
+    onPanelRendered: function() {
+        console.log('The panel was rendered');
+    }
+    
+});

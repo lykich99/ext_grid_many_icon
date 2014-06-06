@@ -1,0 +1,4 @@
+Ext.define('CM.model.M_Grid', {
+    extend: 'Ext.data.Model',
+    fields: ['name', 'email']
+});
