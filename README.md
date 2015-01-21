@@ -1,11 +1,9 @@
 ext_grid_many_icon
 ==================
 
-********************* ExtJS grid несколько иконок в столбике ************************
-
-********************* ExtJS grid many icon in column  *******************************
-
-DEMO http://lweb.pl.ua/ext/grid4/
+********************* <a href="http://lweb.pl.ua/ext/grid4/">ExtJS grid несколько иконок в столбике<a/> ************************
+<br>
+********************* <a href="http://lweb.pl.ua/ext/grid4/" >ExtJS grid many icon in column </a> *******************************
 
 
 1. Copy for this repository in directory accessible to the Web server. You can make this.
